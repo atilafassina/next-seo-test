@@ -1,0 +1,22 @@
+{
+  "name": "next-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pages/index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "node server.js"
+  },
+  "author": "atilafassina",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "glamor": "^2.20.22",
+    "global": "^4.3.1",
+    "next": "^2.0.0-beta.24",
+    "path-match": "1.2.4",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  }
+}
