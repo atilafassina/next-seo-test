@@ -1,4 +1,4 @@
-# sisu-test
+# next-seo-test
 
 this is a test for server-side rendering React on the Sisu website
 
