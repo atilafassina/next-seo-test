@@ -1,11 +1,12 @@
 {
-  "name": "next-test",
+  "name": "next-seo-test",
   "version": "1.0.0",
   "description": "",
   "main": "pages/index.js",
   "scripts": {
     "test": "test",
     "dev": "node server.js",
+    "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
   "author": "atilafassina",
@@ -14,7 +15,7 @@
     "fs": "^0.0.1-security",
     "glamor": "^2.20.22",
     "global": "^4.3.1",
-    "next": "^2.0.0-beta.24",
+    "next": "^2.0.0-beta",
     "path-match": "1.2.4",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
