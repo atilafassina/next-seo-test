@@ -5,7 +5,8 @@
   "main": "pages/index.js",
   "scripts": {
     "test": "test",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js"
   },
   "author": "atilafassina",
   "license": "ISC",
