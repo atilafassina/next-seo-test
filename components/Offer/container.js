@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Offer from './Offer'
+import Offer from './view'
 
 const mapStateToProps = (state) => {
   return {

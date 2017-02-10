@@ -7,7 +7,7 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 const route = pathMatch()
-const match = route('/blog/:id')
+const match = route('/mate/:id')
 
 app.prepare()
 .then(() => {
@@ -19,7 +19,7 @@ app.prepare()
       return
     }
 
-    app.render(req, res, '/test', params)
+    app.render(req, res, '/mate', params)
   })
   .listen(3000, (err) => {
     if (err) throw err

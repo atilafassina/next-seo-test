@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Giphy from './Giphy'
+import Giphy from './view'
 
 const mapStateToProps = (state) => {
   return {

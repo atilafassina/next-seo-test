@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import PageView from './view'
+import Header from './view'
 
 const mapStateToProps = (state) => {
   return {
@@ -10,4 +10,4 @@ const mapStateToProps = (state) => {
 
 export default connect(
   mapStateToProps
-)(PageView);
+)(Header);
