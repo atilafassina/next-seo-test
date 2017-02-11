@@ -7,7 +7,7 @@
     "test": "test",
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js -p 3000",
+    "start": "NODE_ENV=production node server.js -p $PORT",
     "heroku-postbuild": "heroku-nextjs-build"
   },
   "author": "atilafassina",
