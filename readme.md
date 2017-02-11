@@ -20,8 +20,3 @@ npm run dev
 ```
 
 Now you can see the application on [http://localhost:3000](http://localhost:3000)
-
-## Troubleshoot
-
-- For some reason, `next` may not be found on `server.js` if you install everything from `package.json`.
-A quick workaround for now is running `npm i --save next@beta`
