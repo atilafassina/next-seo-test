@@ -20,3 +20,7 @@ npm run dev
 ```
 
 Now you can see the application on [http://localhost:3000](http://localhost:3000)
+
+---
+
+[MIT License - Atila Fassina](https://atilafassina.mit-license.org/)
