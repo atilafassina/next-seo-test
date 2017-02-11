@@ -3,7 +3,7 @@ import {footerBox, gif, gifCaption} from './css'
 
 export default class Giphy extends Component {
   async componentDidMount() {
-    const resp = await fetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=batman')
+    const resp = await fetch('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=batman')
     const json = await resp.json();
 
     setTimeout(() => this.props.dispatch({ type: 'LOADED', hello: json.data.image_url }), 2000)

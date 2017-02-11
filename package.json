@@ -7,11 +7,13 @@
     "test": "test",
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js -p 3000",
+    "heroku-postbuild": "heroku-nextjs-build"
   },
   "author": "atilafassina",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "@mars/heroku-nextjs-build": "^1.1.0",
     "fs": "^0.0.1-security",
     "glamor": "^2.20.22",
     "global": "^4.3.1",
@@ -20,5 +22,11 @@
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"
-  }
+  },
+  "engines": {
+    "node": "6.9.x"
+  },
+  "cacheDirectories": [
+    "nextjs/node_modules"
+  ]
 }
