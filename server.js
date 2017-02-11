@@ -5,6 +5,7 @@ const pathMatch = require('path-match')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
+const port = process.env.PORT || 3000
 const handle = app.getRequestHandler()
 const route = pathMatch()
 const match = route('/mate/:id')
@@ -21,8 +22,8 @@ app.prepare()
 
     app.render(req, res, '/mate', params)
   })
-  .listen(3000, (err) => {
+  .listen(port, (err) => {
     if (err) throw err
-    console.log('> Ready on http://localhost:3000')
+    console.log('> Ready on http://localhost:' + port)
   })
 })
