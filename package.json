@@ -10,15 +10,13 @@
     "start": "NODE_ENV=production node server.js -p $PORT",
     "heroku-postbuild": "heroku-nextjs-build"
   },
-  "author": "atilafassina",
+  "author": "@atilafassina",
   "license": "MIT",
   "dependencies": {
     "@mars/heroku-nextjs-build": "^1.1.0",
-    "fs": "^0.0.1-security",
+    "express": "^4.14.1",
     "glamor": "^2.20.22",
-    "global": "^4.3.1",
     "next": "^2.0.0-beta",
-    "path-match": "1.2.4",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"

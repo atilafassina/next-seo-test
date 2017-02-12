@@ -1,4 +1,4 @@
-import { css, speedy } from 'glamor'
+import { css } from 'glamor'
 
 export const footerBox = css({
   marginTop: '5em',
