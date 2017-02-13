@@ -5,7 +5,7 @@ import { reducer, initStore } from '../store'
 import Head from 'next/head'
 import Header from '../components/Header/container'
 import { css } from 'glamor'
-import 'glamor/reset'
+// import 'glamor/reset'
 
 css.global('html, body', {
   padding: 0,
