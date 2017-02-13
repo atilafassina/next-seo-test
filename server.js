@@ -9,8 +9,12 @@ app.prepare()
 .then(() => {
   const server = express()
 
-  server.get('/mate', (req, res) => {
-    return app.render(req, res, '/mate', req.query)
+  server.get('/mate/hot', (req, res) => {
+    return app.render(req, res, '/mate', { id: 'hot' })
+  })
+
+  server.get('/mate/terere', (req, res) => {
+      return app.render(req, res, '/mate', { id: 'terere'})
   })
 
   server.get('/googled87b98058c02dda0.html', (req, res) => {
