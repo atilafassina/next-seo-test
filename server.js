@@ -17,6 +17,12 @@ app.prepare()
     return res.send('google-site-verification: googled87b98058c02dda0.html')
   })
 
+  server.get('/robots.txt', (req, res) => {
+    return res.sendFile('robots.txt', {
+      root: __dirname
+    })
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })
