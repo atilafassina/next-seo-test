@@ -16,7 +16,11 @@
     "@mars/heroku-nextjs-build": "^1.1.0",
     "express": "^4.14.1",
     "glamor": "^2.20.22",
+    "i18next": "^7.1.2",
+    "i18next-browser-languagedetector": "^1.0.1",
+    "i18next-xhr-backend": "^1.4.0",
     "next": "^2.0.0-beta",
+    "react-i18next": "^2.2.0",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"

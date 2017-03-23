@@ -8,6 +8,7 @@ export default class Navigation extends Component {
       <nav className={nav}>
           <ul className={ul}>
             <li className={li}><Link href='/prepare-it'><a className={link}>prepare it</a></Link></li>
+            <li className={li}><Link href='/i18next'><a className={link}>i18next</a></Link></li>
             <li className={li}><Link href='/mate?id=hot' as='/mate/hot'><a className={link}>hot mate</a></Link></li>
             <li className={li}><Link href='/mate?id=terere' as='/mate/terere'><a className={link}>terere (cold mate)</a></Link></li>
           </ul>

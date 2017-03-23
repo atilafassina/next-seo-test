@@ -1,13 +1,18 @@
 import { connect } from 'react-redux'
 import Header from './view'
+import { translate } from 'react-i18next'
+import i18n from '../../pages/i18n';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, props) => {
   return {
     type: state.type,
-    hello: state.hello
+    hello: state.hello,
+    t: props.t
   }
 }
 
-export default connect(
+const connected = connect(
   mapStateToProps
-)(Header);
+)(Header)
+
+export default translate(['foo'])(connected)

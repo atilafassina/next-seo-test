@@ -1572,7 +1572,7 @@ hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
-hoist-non-react-statics@^1.0.3:
+hoist-non-react-statics@^1.0.3, hoist-non-react-statics@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
@@ -1621,6 +1621,18 @@ http-signature@~1.1.0:
 https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
+
+i18next:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-7.1.2.tgz#3a535ac9bb05589645e2caedaeafe3b56931f823"
+
+i18next-browser-languagedetector:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/i18next-browser-languagedetector/-/i18next-browser-languagedetector-1.0.1.tgz#73e43aa46fc1c909cac6178b9d1b803d02610faa"
+
+i18next-xhr-backend:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/i18next-xhr-backend/-/i18next-xhr-backend-1.4.0.tgz#2c6e15e52a9a01c73480999fba210e2bee303c05"
 
 iconv-lite@~0.4.13:
   version "0.4.15"
@@ -2505,6 +2517,12 @@ react-hot-loader@3.0.0-beta.6:
     react-proxy "^3.0.0-alpha.0"
     redbox-react "^1.2.5"
     source-map "^0.4.4"
+
+react-i18next:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-2.2.0.tgz#a8779e55778bd2e891649d8b2e6dd38787367ee0"
+  dependencies:
+    hoist-non-react-statics "1.2.0"
 
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"

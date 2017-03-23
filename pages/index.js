@@ -3,6 +3,9 @@ import { Provider } from 'react-redux'
 import BaseTemplate from './BaseTemplate'
 import Page from './homepage/page'
 import { reducer, initStore } from '../store'
+import { I18nextProvider } from 'react-i18next'
+import i18n from './i18n'
+
 
 export default class Homepage extends Component {
   static getInitialProps ({ req }) {
@@ -23,11 +26,13 @@ export default class Homepage extends Component {
     })
 
     return (
-      <Provider store={this.store}>
-        <BaseTemplate>
-          <Page />
-        </BaseTemplate>
-      </Provider>
+      <I18nextProvider i18n={ i18n }>
+        <Provider store={this.store}>
+            <BaseTemplate>
+              <Page />
+            </BaseTemplate>
+        </Provider>
+      </ I18nextProvider>
     )
   }
 }
