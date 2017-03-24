@@ -15,4 +15,4 @@ const connected = connect(
   mapStateToProps
 )(Header)
 
-export default translate(['foo'])(connected)
+export default translate(['common'])(connected)

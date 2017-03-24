@@ -1,27 +1,24 @@
-import i18n from 'i18next';
-import XHR from 'i18next-xhr-backend';
-// import Cache from 'i18next-localstorage-cache';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from 'i18next'
+import LanguageDetector from 'i18next-browser-languagedetector'
 
-
-i18n
-  .use(XHR)
+const startI18n = file => {
+  return i18n
   // .use(Cache)
   .use(LanguageDetector)
   .init({
     fallbackLng: 'en',
+    resources: file,
 
     // have a common namespace used around the full app
     ns: ['common'],
     defaultNS: 'common',
 
-    debug: true,
+    debug: false,
     backend: {
       loadPath: '/static/locales/{{lng}}/{{ns}}.json',
       jsonIndent: 2,
       test: '{{ng}}'
     },
-
 
     // cache: {
     //   enabled: true
@@ -35,5 +32,6 @@ i18n
       }
     }
   });
+}
 
-export default i18n;
+export default startI18n;

@@ -1,9 +1,11 @@
+const fetch = require('node-fetch');
 const express = require('express')
 const next = require('next')
 const dev = process.env.NODE_ENV !== 'production'
 const port = process.env.PORT || 3000
 const app = next({ dir: '.', dev })
 const handle = app.getRequestHandler()
+
 
 app.prepare()
 .then(() => {
